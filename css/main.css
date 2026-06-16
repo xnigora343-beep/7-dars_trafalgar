@@ -62,6 +62,7 @@ body {
 }
 
 .title::after {
+    content: "";
     display: block;
     width: 56px;
     height: 2px;
@@ -98,4 +99,122 @@ body {
 .arrow {
     margin-left: 5px;
     font-weight: bold;
+}
+
+.articles {
+    padding: 80px 0;
+}
+
+.articles__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles__main-title {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.articles__main-title::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 2px;
+    background-color: #000000;
+    margin: 20px auto 0 auto;
+}
+
+.articles__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.articles__item {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 40px 150px rgba(229, 233, 246, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.articles__item-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.articles__item-content {
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.articles__item-title {
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.articles__item-description {
+    font-size: 16px;
+    color: #7D7987;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.articles__item-link {
+    color: #40B2FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.articles__item-link:hover {
+    color: #458FF6;
+}
+
+.articles__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.articles__btn {
+    display: inline-block;
+    padding: 15px 65px;
+    border: 1.4px solid #458FF6;
+    color: #458FF6;
+    text-decoration: none;
+    border-radius: 55px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.articles__btn:hover {
+    background-color: #458FF6;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(69, 143, 246, 0.3);
 }
